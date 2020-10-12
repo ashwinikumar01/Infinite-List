@@ -8,6 +8,8 @@ abstract class PostState extends Equatable {
 
   @override
   List<Object> get props => [];
+
+  copyWith({status, List posts, bool hasReachedMax}) {}
 }
 
 class PostInitial extends PostState {}
